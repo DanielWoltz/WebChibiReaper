@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Web Chibi Reaper</title>
+
+    <!-- Link the stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+    Start Game Screen
+    ======================================== -->
+
+    <div id="start-screen">
+
+        <h1>The Web Chibi Reaper</h1>
+
+        <p>A spooky adventure awaits!</p>
+
+        <button id="start-game-button">
+            Start Game
+        </button>
+
+    </div>
+
+    <!-- ========================================
+     Game Over Screen
+    ======================================== -->
+
+    <div id="game-over-screen">
+
+        <h1>Game Over!</h1>
+
+        <p>The ghosts got you!</p>
+
+        <h2 id="final-coffee-score">
+            Coffee Collected: 0
+        </h2>
+
+        <button id="play-again-button">
+            Play Again
+        </button>
+
+    </div>
+
+    <p class="instructions">
+        Press Spacebar in order to jump.
+    </p>
+
+    <p class="instructions">
+        Avoid all the ghosts.
+    </p>
+
+    <p class="instructions">
+        Collect as much coffee as possible.
+    </p>
+
+    <!-- Coffee collection counter -->
+    <div id="coffee-counter">☕ Coffee: 0</div>
+
+<!-- ========================================
+     Background Music Controls
+======================================== -->
+
+    <div id="music-controls">
+
+        <button id="music-toggle">
+            Play Music
+        </button>
+
+        <label for="music-volume">
+            Music Volume:
+        </label>
+
+        <input
+            type="range"
+            id="music-volume"
+            min="0"
+            max="100"
+            value="30"
+        >
+
+    </div>
+
+    <img id="player"
+         src="reaper_images/ReaperArmBackwards.png"
+         alt="Player character">
+
+    <!-- Load JavaScript last -->
+    <script src = "chibi_reaper_class.js"></script>
+    <script src = "ghost_class.js"></script>
+    <script src="scrolling_skull.js"></script>
+    <script src="scrolling_sprites.js"></script>
+    <script src="coffee_class.js"></script>
+    <script src="music.js"></script>
+    <script src="script.js"></script>
+    
+
+</body>
+
+</html>
